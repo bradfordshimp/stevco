@@ -40,12 +40,13 @@ aside header h2 {
 .bigbutton {
     display: block;
     align-self: center;
-    background-color: #9F713F;
+    background-color: #643D2B;
     color: white;
     padding: 1rem;
     font-size: 1.2rem;
     border-radius: 5%;
     font-family: 'Merriweather', serif;
+    text-decoration: none;
 }
 
 .boxheader {
@@ -158,6 +159,10 @@ nav {
     flex-direction: column;
 }
 
+.nobgcolor {
+    background: none;
+}
+
 p {
     margin-left: 65px;
     margin-right: 65px;
@@ -186,6 +191,14 @@ p {
 /* Media Queries */
 
 @media only screen and (min-width: 700px) {
+
+    .banner {
+        justify-content: space-around;
+        background-color: #204C87;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+    }
     
     .flex {
         display: flex;
