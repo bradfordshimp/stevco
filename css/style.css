@@ -51,6 +51,9 @@ aside header h2 {
     margin: 1rem;
 }
 
+.bowtie {
+    width: 30px;
+}
 .boxheader {
     font-size: 2rem;
 }
@@ -60,9 +63,9 @@ aside header h2 {
     box-shadow: 4px 4px 2px rgba(0, 0, 0, .6);
 }
 
-.brochuresmall:hover {
+/*.brochuresmall:hover {
     transform: scale(1.4, 1.4);
-}
+}*/
 
 .flex {
     display: flex;
@@ -100,6 +103,7 @@ header h2 {
 
 header nav {
     background-color: #204C87;
+    
 }
 
 header nav ul {
@@ -217,11 +221,15 @@ p {
     nav ul {
         display: flex;
         flex-direction: row;
+        
     }
 
     .item1 {
         margin-right: auto;
         margin-left: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .boxheader {
@@ -355,7 +363,8 @@ a.prev:hover,a.next:hover {
 .img-slideshow {
         height: 100vh;
         margin: auto;
-        transition-timing-function: ease;
+        box-shadow: 5px 0px 5px black;
+        box-shadow: -5px 0px 5px black, 5px 0px 5px black;
     }
 
   

@@ -1,0 +1,157 @@
+/* font-family: 'Staatliches', cursive; */
+/* font-family: 'Montserrat', sans-serif; */
+
+
+.colordark {
+    color: #2d130f;
+}
+.fontlight {
+    color: whitesmoke;
+}
+
+/* .forty {
+    max-width: 40vw;
+} */
+
+.box {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 2em;
+    border: 5px dashed whitesmoke;
+    
+    
+}
+.bgdark {
+    background-color: #2d130f;
+    margin: 0;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.button {
+    background-color: whitesmoke;
+    display: inline-block;
+    color: #2d130f;
+    padding: .5em;
+    
+}
+.center {
+    text-align: center;
+}
+
+
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.flexrow section {
+    flex-basis: 600px;
+    
+}
+
+.flexrow article {
+    flex-basis: 600px;
+    
+}
+
+.flexrow aside {
+    flex-basis: 500px;
+    
+}
+
+footer {
+    margin: 20px;
+}
+html {
+    overflow-x: hidden;
+    
+}
+
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0;
+    width: auto;
+    height: 100%;
+    margin-top: -1.3rem;
+}
+
+h1, h2 {
+    font-family: 'Staatliches', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    /* border: 1px solid red; */
+    line-height: .75;
+  
+    
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2d130f;
+    /* border: 1px solid red; */
+    
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    /* border: 1px solid red; */
+    line-height: .75;
+}
+
+.imagesmall {
+    max-width: 300px;
+}
+
+important {
+    font-weight: bolder;
+}
+
+.logo {
+    width: 200px;
+}
+
+main {
+    margin: 20px;
+}
+
+.nunder {
+    text-decoration: none;
+    color: #2d130f;
+}
+
+.nunder:visited {
+    color: #2d130f;
+}
+
+.sixty {
+    max-width: 60vw;
+}
+
+/*.thirty {
+    max-width: 30vw;
+}*/
+.top {
+    background-color: #2d130f;
+    margin: 0px;
+   padding-top: 1.5rem;
+    align-content: center;
+    /* padding: 0; */
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
