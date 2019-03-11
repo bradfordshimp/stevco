@@ -9,8 +9,42 @@ font-family: 'Roboto', sans-serif;
 #ff5757 Heart
 */
 
+/* -- Flex -- */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.flexarticle {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- Form -- */
+
+fieldset {
+    border: none;
+}
+
+#form-top {
+    display: none;
+}
+
+#form-top:target {
+    display: block;
+}
 
 
+
+/* -- Main Elements -- */
 
 article, 
 aside {
@@ -67,22 +101,6 @@ aside header h2 {
     transform: scale(1.4, 1.4);
 }*/
 
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-.flexarticle {
-    display: flex;
-    flex-direction: column;
-}
 
 header {
     background-color: #2773B4;
@@ -231,6 +249,8 @@ p {
         align-items: center;
         justify-content: space-between;
     }
+
+    
 
     .boxheader {
         display: box;
