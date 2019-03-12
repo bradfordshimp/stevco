@@ -9,6 +9,31 @@ font-family: 'Roboto', sans-serif;
 #ff5757 Heart
 */
 
+/* -- Elements -- */
+
+.big-button {
+    display: block;
+    align-self: center;
+    background-color: #ff5757;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5%;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.bowtie {
+    width: 30px;
+}
+
+.brochuresmall {
+    width: 400px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .6);
+}
+
+
 /* -- Flex -- */
 
 .flex {
@@ -20,18 +45,45 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .flexarticle {
     display: flex;
     flex-direction: column;
 }
 
+.spacebetween {
+    justify-content: space-between;
+}
+
+
+
 /* -- Form -- */
+
+button {
+    max-width: 200px;
+    margin: 10px 0;
+    border: none;
+}
 
 fieldset {
     border: none;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
 }
 
 #form-top {
@@ -42,9 +94,20 @@ fieldset {
     display: block;
 }
 
+input {
+    width: 300px;
+}
 
+legend {
+    font-size: 90%;
+    font-style: italic;
+}
 
-/* -- Main Elements -- */
+/* -- Padding, Margins and Alignment -- */
+
+.align-right {
+    text-align: right;
+}
 
 article, 
 aside {
@@ -52,6 +115,8 @@ aside {
     padding: 1rem;
     
 }
+
+/* -- Main Elements -- */
 
 article header {
     background-color: inherit;
@@ -72,40 +137,25 @@ aside header h2 {
     color: inherit;
 }
 
-.bigbutton {
-    display: block;
-    align-self: center;
-    background-color: #ff5757;
-    color: white;
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 5%;
-    font-family: 'Merriweather', serif;
-    text-decoration: none;
-    margin: 1rem;
+.border {
+    border: 5px solid black;
 }
 
-.bowtie {
-    width: 30px;
-}
+
 .boxheader {
     font-size: 2rem;
 }
 
-.brochuresmall {
-    width: 400px;
-    box-shadow: 4px 4px 2px rgba(0, 0, 0, .6);
-}
+
 
 /*.brochuresmall:hover {
     transform: scale(1.4, 1.4);
 }*/
 
 
-header {
+.bright-blue {
     background-color: #2773B4;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 header h1 {
@@ -200,6 +250,10 @@ p {
     text-align: justify;
 }
 
+.pad-vert {
+    padding: 10px 0;
+}
+
 #pbpie {
     background-image: url("../images/pie.jpg");
     height: 600px;
@@ -211,7 +265,7 @@ p {
     justify-content: space-between;
 }
 
-#texture {
+.texture {
     background-image: url("../images/back-pattern.png");
 }
 
