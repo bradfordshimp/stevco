@@ -1,0 +1,11 @@
+/* Backgrounds and Textures */
+
+.wood {
+    background-image: url('/images/darkwood.jpg')
+}
+
+/* Color */
+
+.light {
+    color: #ffde59;
+}
