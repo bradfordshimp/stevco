@@ -20,90 +20,106 @@ nav ul {
     
 }
 
+@media only screen and (min-width: 600px){
+    .wood {
+        background-image: url('../images/darkwood.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
 .wood {
     background-image: url('../images/darkwood.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    /*background-position: center;*/
 }
+
+
 
 /* Circles */
 
-#circle1 {
-    width: 400px;
-    height: 400px;
-    background-color: none;
-    border-radius: 50%;
-    border: 3px solid #ffde59;
-    position: absolute;
+
+
+
+@media only screen and (min-width: 600px) {
+
+    #circle1 {
+        width: 400px;
+        height: 400px;
+        background-color: none;
+        border-radius: 50%;
+        border: 3px solid #ffde59;
+        position: absolute;
+        
+    }
     
-}
+    #circle2 {
+        width: 350px;
+        height: 350px;
+        background-color: none;
+        border-radius: 50%;
+        border: 2.9px solid #ffde59;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    
+    #circle3 {
+        width: 300px;
+        height: 300px;
+        background-color: none;
+        border-radius: 50%;
+        border: 2.8px solid #ffde59;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    
+    #circle4 {
+        width: 250px;
+        height: 250px;
+        background-color: none;
+        border-radius: 50%;
+        border: 2.7px solid #ffde59;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    
+    #circle5 {
+        width: 200px;
+        height: 200px;
+        background-color: none;
+        border-radius: 50%;
+        border: 2.6px solid #ffde59;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    
+    #circle6 {
+        width: 150px;
+        height: 150px;
+        background-color: none;
+        border-radius: 50%;
+        border: 2.5px solid #ffde59;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        overflow: hidden;
+    }
 
-#circle2 {
-    width: 350px;
-    height: 350px;
-    background-color: none;
-    border-radius: 50%;
-    border: 2.9px solid #ffde59;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-}
+    #full-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #ffde59;
+        position: absolute;
+    }
 
-#circle3 {
-    width: 300px;
-    height: 300px;
-    background-color: none;
-    border-radius: 50%;
-    border: 2.8px solid #ffde59;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-}
-
-#circle4 {
-    width: 250px;
-    height: 250px;
-    background-color: none;
-    border-radius: 50%;
-    border: 2.7px solid #ffde59;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-}
-
-#circle5 {
-    width: 200px;
-    height: 200px;
-    background-color: none;
-    border-radius: 50%;
-    border: 2.6px solid #ffde59;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-}
-
-#circle6 {
-    width: 150px;
-    height: 150px;
-    background-color: none;
-    border-radius: 50%;
-    border: 2.5px solid #ffde59;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    overflow: hidden;
-}
-
-#full-circle {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #ffde59;
-    position: absolute;
-}
-
-.square-circles {
+   .square-circles {
     display: box;
     position: absolute;
     height: 500px;
@@ -112,7 +128,9 @@ nav ul {
     left: 5%;
     transform: rotate(.1turn);
     z-index: 1;
-}
+   } 
+
+
 
 #rect1 {
     
@@ -325,18 +343,20 @@ nav ul {
     position: absolute;
     left: 102%;
 }
-
-.top-circles {
-    position: absolute;
-    left: 95%;
-    top: 95%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 500px;
-    overflow: hidden;
-    
-    
 }
+@media only screen and (min-width: 600px){
+    .top-circles {
+        position: absolute;
+        left: 95%;
+        top: 95%;
+        transform: translate(-50%, -50%);
+        height: 500px;
+        width: 500px;
+        overflow: hidden;
+    }
+}
+
+
 /* Color */
 
 .light {
@@ -372,6 +392,7 @@ nav ul {
 .flex-row {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .flex-row-reverse {
@@ -395,7 +416,13 @@ form {
     background-color: #204C87;
     line-height: 1.5 rem;
     padding: 1rem;
-    width: 50vw;
+    width: 100vw;
+}
+
+@media only screen and (min-width: 600px) {
+    form {
+        width: 50vw;
+    }
 }
 
 form > ul {
@@ -432,18 +459,37 @@ input {
 
 #choc-pb-pie {
     background-image: url('../images/pie.jpg');
-    width: 400px;
+    width: 100vw;
     height: 400px;
-    border-radius: 50%;
-    background-size: 200%;
+    /*border-radius: 50%;*/
+    background-size: 100%;
     background-position: center;
-    display: box;
-    position: absolute;
-    top: 30%;
+    /*display: box;
+    /*position: absolute;*/
+    /*top: 30%;
     left: 25%;
-    z-index: 2;
+    z-index: 2;*/
     background-repeat: no-repeat;
 }
+
+@media only screen and (min-width: 600px) {
+    #choc-pb-pie {
+        background-image: url('../images/pie.jpg');
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-size: 200%;
+        background-position: center;
+        display: box;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        z-index: 2;
+        background-repeat: no-repeat;
+    }
+    
+}
+
 
 /* Positioning */
 
@@ -473,9 +519,12 @@ header nav ul li a {
     line-height: 1.75;
 }
 
-.half-page {
+@media only screen and (min-width: 600px) {
+    .half-page {
     width: 40vw;
 }
+}
+
 
 .item1 {
     margin-right: auto;
@@ -492,27 +541,57 @@ nav ul {
 } 
 
 .pad-medium {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px){
+    .pad-medium {
     padding-right: 80px;
     padding-top: 60px;
 }
 
-.page-header {
+}
+
+.pad-top {
+    padding-top: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+    .page-header {
     height: 500px;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
 }
-
-.relative {
-    position: relative;
 }
+
+
+
+@media only screen and (min-width: 600px) {
+    .relative {
+        position: relative;
+    }
+
+
 
 .z10 {
     z-index: 10;
     display: box;
     position: relative;
 }
+}
 
+/* Single Column */
+
+h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
 
 
 
@@ -525,15 +604,21 @@ h1, h2 {
     font-weight: 900;
 }
 
-h1 {
-    font-size: 4rem;
-    margin: 1rem;
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 4rem;
+        margin: 1rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin: 1rem;
+    }
 }
 
-h2 {
-    font-size: 3rem;
-    margin: 1rem;
-}
+
+
+
 
 h3, li {
     font-family: 'Roboto', sans-serif;
