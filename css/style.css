@@ -38,7 +38,8 @@ font-family: 'Roboto', sans-serif;
 
 .flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex-column {
@@ -54,11 +55,13 @@ font-family: 'Roboto', sans-serif;
     align-items: center;
 }
 
-
-
 .flexarticle {
     display: flex;
     flex-direction: column;
+}
+
+.spacearound {
+    justify-content: space-around;
 }
 
 .spacebetween {
@@ -139,12 +142,26 @@ aside header h2 {
     color: inherit;
 }
 
+.banner {
+    justify-content: space-around;
+    background-color: #204C87;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
 .border {
     border: 5px solid black;
 }
 
 
+
+
 .boxheader {
+    display: box;
+    max-width: 500px;
+    text-align: center;
+    /*margin-left: 80px;*/
     font-size: 2rem;
 }
 
@@ -209,6 +226,10 @@ h2 {
     margin-top: 25px;
 }
 
+h3 {
+    margin: 1rem;
+}
+
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
 }
@@ -247,10 +268,15 @@ nav {
 }
 
 p {
-    margin-left: 65px;
-    margin-right: 65px;
     text-align: justify;
 }
+@media only screen and (min-width: 600px) {
+   p {
+    margin-left: 65px;
+    margin-right: 65px;
+} 
+}
+
 
 .pad-vert {
     padding: 10px 0;
@@ -258,13 +284,30 @@ p {
 
 #pbpie {
     background-image: url("../images/pie.jpg");
-    height: 600px;
+    
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.spacebetween {
-    justify-content: space-between;
+
+#splash {
+    background-image: url("../images/splash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 600px) {
+    #splash {
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+   
+#pbpie {
+    height: 600px;
+}    
 }
 
 .texture {
@@ -278,19 +321,6 @@ p {
 /* Media Queries */
 
 @media only screen and (min-width: 700px) {
-
-    .banner {
-        justify-content: space-around;
-        background-color: #204C87;
-        align-items: center;
-        color: white;
-        font-size: 1.5rem;
-    }
-    
-    .flex {
-        display: flex;
-        flex-direction: row;
-    }
     
     nav ul {
         display: flex;
@@ -309,17 +339,13 @@ p {
     
 
     .boxheader {
-        display: box;
-        max-width: 500px;
-        text-align: left;
-        margin-left: 80px;
         font-size: 3rem;
     }
 
     .logo {
         max-width: 300px;
         max-height: 300px;
-        margin-right: 80px;
+        /*margin-right: 80px;*/
         
     }
 }
