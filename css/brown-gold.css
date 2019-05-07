@@ -419,7 +419,7 @@ form {
     width: 100vw;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 1000px) {
     form {
         width: 50vw;
     }
@@ -457,6 +457,8 @@ input {
     width: 30px;
 }
 
+
+
 #choc-pb-pie {
     background-image: url('../images/pie.jpg');
     width: 100vw;
@@ -472,7 +474,7 @@ input {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     #choc-pb-pie {
         background-image: url('../images/pie.jpg');
         width: 400px;
@@ -519,7 +521,7 @@ header nav ul li a {
     line-height: 1.75;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .half-page {
     width: 40vw;
 }
