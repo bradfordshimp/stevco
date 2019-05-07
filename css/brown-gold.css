@@ -657,3 +657,7 @@ nav {
 ul {
     list-style-type: circle;
 }
+
+.white {
+    color: white;
+}
