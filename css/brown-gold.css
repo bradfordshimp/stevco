@@ -43,7 +43,7 @@ nav ul {
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 
     #circle1 {
         width: 400px;
@@ -344,7 +344,7 @@ nav ul {
     left: 102%;
 }
 }
-@media only screen and (min-width: 600px){
+@media (min-width: 1000px){
     .top-circles {
         position: absolute;
         left: 95%;
@@ -472,7 +472,7 @@ input {
     background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 800px) {
     #choc-pb-pie {
         background-image: url('../images/pie.jpg');
         width: 400px;
