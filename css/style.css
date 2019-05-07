@@ -78,6 +78,11 @@ button {
     border: none;
 }
 
+.center-form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 fieldset {
     border: none;
     width: 100%;
