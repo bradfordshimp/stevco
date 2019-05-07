@@ -43,7 +43,7 @@ nav ul {
 
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 1) {
 
     #circle1 {
         width: 400px;
