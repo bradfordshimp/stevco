@@ -472,7 +472,7 @@ input {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     #choc-pb-pie {
         background-image: url('../images/pie.jpg');
         width: 400px;
@@ -519,7 +519,7 @@ header nav ul li a {
     line-height: 1.75;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 1000px) {
     .half-page {
     width: 40vw;
 }
