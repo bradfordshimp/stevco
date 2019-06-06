@@ -9,6 +9,10 @@ font-family: 'Roboto', sans-serif;
 #ff5757 Heart
 */
 
+html, body {
+    overflow-x: hidden;
+}
+
 /* -- Elements -- */
 
 .big-button {
@@ -111,6 +115,35 @@ input {
 legend {
     font-size: 90%;
     font-style: italic;
+}
+
+/* -- Grid  -- */
+
+.grid {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-gap: 1rem;
+    overflow: hidden;
+    
+
+
+}
+
+.card img {
+        width: 100%;
+    }
+
+.grey {
+    background-color: rgb(226, 225, 225); 
+}
+
+.greyer {
+    background-color: rgb(194, 193, 193);
+}
+
+.greyest {
+    background-color: grey;
 }
 
 /* -- Padding, Margins and Alignment -- */
@@ -222,6 +255,7 @@ header nav ul li a {
 
 h1 {
     font-size: 3rem;
+    font-family: 'Caveat', 'Merriweather', serif;
 }
 
 h2 {
@@ -235,7 +269,7 @@ h3 {
     margin: 1rem;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Merriweather', serif;
 }
 
@@ -344,7 +378,7 @@ p {
     
 
     .boxheader {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .logo {
@@ -474,4 +508,16 @@ a.prev:hover,a.next:hover {
         box-shadow: -5px 0px 5px black, 5px 0px 5px black;
     }
 
-  
+    /* -- Testimonials -- */
+
+    .quote {
+        background-color: #2773B4;
+        clip-path: polygon(0 0, 97% 6%, 92% 98%, 0% 100%);
+        padding: 1.5rem;
+    }
+
+    .quote2 {
+        background-color: #ff5757;
+        clip-path: polygon(0 0, 97% 6%, 92% 98%, 0% 100%);
+        padding: 1.5rem;
+    }
