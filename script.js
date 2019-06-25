@@ -1,6 +1,6 @@
 
 
-document.addEventListener("DOMContentLoaded", function (event) {
+/*document.addEventListener("DOMContentLoaded", function (event) {
 
     window.addEventListener("load", function (e) {
 
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 });
 
-
-
+*/
+/*
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -60,7 +60,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
-
+*/
 
 
 
