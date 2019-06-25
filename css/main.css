@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap");
-body, html {
+@import url("https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap");
+body,
+html {
   margin: 0;
 }
 
 body {
   height: 100%;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+  display: none;
 }
 
-header {
+header.nav {
   position: absolute;
   padding: 1em;
   z-index: 20;
@@ -22,17 +25,17 @@ header {
   background: white;
 }
 
-header a {
+header.nav a {
   text-decoration: none;
   color: black;
 }
 
-header a.logo {
+header.nav a.logo {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-header nav ul {
+header.nav nav ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,8 +47,12 @@ header nav ul {
   padding: 0;
 }
 
-header nav ul li a {
+header.nav nav ul li a {
   padding: 1em;
+}
+
+blockquote footer {
+  font-family: 'Caveat', cursive;
 }
 
 .wrapper {
@@ -53,22 +60,33 @@ header nav ul li a {
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
+  /*note*/
 }
 
-.wrapper main, .wrapper aside {
+.wrapper main,
+.wrapper aside, .wrapper section {
   padding: 3em;
 }
 
-.wrapper main h1, .wrapper main h2, .wrapper main .read-btn, .wrapper aside h1, .wrapper aside h2, .wrapper aside .read-btn {
+.wrapper main h1,
+.wrapper main h2,
+.wrapper main .read-btn,
+.wrapper aside h1,
+.wrapper aside h2,
+.wrapper aside .read-btn, .wrapper section h1,
+.wrapper section h2,
+.wrapper section .read-btn {
   text-transform: uppercase;
   margin: 0;
 }
 
-.wrapper main h2, .wrapper aside h2 {
+.wrapper main h2,
+.wrapper aside h2, .wrapper section h2 {
   font-size: 1.4rem;
 }
 
-.wrapper main .read-btn, .wrapper aside .read-btn {
+.wrapper main .read-btn,
+.wrapper aside .read-btn, .wrapper section .read-btn {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -78,7 +96,8 @@ header nav ul li a {
   padding-left: 1em;
 }
 
-.wrapper main .primary, .wrapper aside .primary {
+.wrapper main .primary,
+.wrapper aside .primary, .wrapper section .primary {
   padding: 1.5em 1.5em 1.5em calc(3em + 25px);
   background-position: 3em;
   border: 1px solid gray;
@@ -87,34 +106,229 @@ header nav ul li a {
   margin-left: -3em;
 }
 
-.wrapper main .clipper, .wrapper aside .clipper {
+.wrapper main .clipper,
+.wrapper aside .clipper, .wrapper section .clipper {
   overflow: hidden;
+}
+
+.wrapper section {
+  height: 100vh;
+  margin-top: 3em;
 }
 
 .wrapper main.hero {
   padding-top: 8em;
-  background: url("../images/NYBackground.jpg");
+  background: url("../images/NYBackground.png");
   background-size: cover;
 }
 
 .wrapper main.hero p {
   width: 70%;
   font-size: 1.2rem;
-  margin-bottom: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  /*background-color: rgba(187, 208, 255, 0.658);*/
+  margin-left: -10px;
+  padding-left: 10px;
 }
 
-.wrapper aside.sidebar, .wrapper aside.subscribe {
-  font-size: .9rem;
+.wrapper main.hero h1 {
+  font-size: 2.4rem;
+}
+
+.wrapper aside.sidebar,
+.wrapper aside.subscribe {
+  font-size: 0.9rem;
   line-height: 1.6em;
 }
 
-.wrapper aside.sidebar {
-  background: #FFECBB;
+.wrapper aside.mySlides {
+  /*background: $primary-color;*/
 }
 
-.wrapper aside.sidebar .read-btn {
+.wrapper aside.mySlides:nth-of-type(1) {
+  background: #ffecbb;
+}
+
+.wrapper aside.mySlides:nth-of-type(2) {
+  background: #ffecbbe8;
+}
+
+.wrapper aside.mySlides:nth-of-type(3) {
+  background: #ffecbbc9;
+}
+
+.wrapper aside.mySlides:nth-of-type(4) {
+  background: #ffecbba4;
+}
+
+.wrapper aside.mySlides:nth-of-type(5) {
+  background: #ffecbb7c;
+}
+
+.wrapper aside.mySlides:nth-of-type(6) {
+  background: #ffecbb42;
+}
+
+.wrapper .read-btn {
   margin-top: 2em;
   display: block;
-  background-position: 0 .2em;
+  background-position: 0 0.4em;
+}
+
+.section2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+aside.subscribe input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  font-family: "Montserrat";
+  margin-bottom: 1em;
+}
+
+aside.subscribe button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1em;
+  border: none;
+  font-family: "Montserrat";
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#ff {
+  background: url("/images/StevFF1.png");
+  background-size: cover;
+}
+
+#tf {
+  background: url("/images/StevTF1.png");
+  background-size: cover;
+}
+
+#bt {
+  background: url("/images/Black Tie Desserts Front.png");
+  background-size: cover;
+}
+
+#zap {
+  background: url("/images/Zap.png");
+  background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .section2 {
+    height: 100vh;
+  }
+  header {
+    background: none;
+  }
+  .wrapper {
+    -ms-grid-columns: 70% auto;
+        grid-template-columns: 70% auto;
+    -ms-grid-rows: 60% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas: "hero sidebar" "hero subscribe";
+    height: 100vh;
+  }
+  .wrapper section {
+    height: 100%;
+  }
+  /*.section2 {
+    grid-template-columns: 70% auto;
+    grid-template-rows: 60% auto;
+    grid-template-areas:
+      "hero sidebar"
+      "hero subscribe";
+    height: 100vh;*/
+  .wrapper2 {
+    -ms-grid-columns: auto 5px auto 5px auto 5px auto;
+        grid-template-columns: auto 5px auto 5px auto 5px auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "one spacer two spacer three spacer four";
+    height: 100vh;
+  }
+  section.1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+  }
+  section.2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: two;
+  }
+  section.3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: three;
+  }
+  section.4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    grid-area: four;
+  }
+  main.hero {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: hero;
+  }
+  main,
+  aside {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    /*align-items: center;*/
+  }
+  .sidebar .inner {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 21px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

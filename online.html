@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title> Stevco Fundraising - Local NY Products </title>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+</head>
+
+<body class="texture">
+    <header class="nav">
+        <a href="#" class="logo"> Stevco Fundraising </a>
+        <nav>
+            <ul>
+                <li> <a href="/programs.html"> Programs </a></li>
+                <li> <a href="/about.html"> About Us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-center onlineorder">
+        <h1> Online Ordering </h1>
+        <p> To share your fundraiser and take orders online, please
+            select your group below and then register. You will get
+            a link that is unique to you so that your online orders are
+            credited to you and your group.
+        </p>
+        <div class="dropdown">
+            <button onclick="show()" class="dropbtn"> Select a Group </button>
+            <div id="dropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="onlineOrderingInput" onkeyup="filterFunction()">
+                <a href="#avonPTA" onclick="show()">Avon PTA</a>
+                <a href="#base">Bear Road PTA</a>
+                <a href=""> Florence Brasser Family Assoc</a>
+                <a href="">Studio 19 Dance Company</a>
+                <a href="#blog">Williamson PTA</a>
+
+            </div>
+        </div>
+
+    </main>
+    <div class="participant">
+        <section id="avonPTA">
+            <script type="text/javascript"
+                src="https://stevco.formstack.com/forms/js.php/participant_sign_up?no_style=1"></script><noscript><a
+                    href="https://stevco.formstack.com/forms/participant_sign_up" title="Online Form">Online Form -
+                    Participant Sign Up</a></noscript>
+            <div style="text-align:right; font-size:x-small;"><a
+                    href="http://www.formstack.com?utm_source=jsembed&utm_medium=product&utm_campaign=product+branding&fa=h,3332227"
+                    title="Powered by Formstack">Powered by Formstack</a></div>
+        </section>
+    </div>
+
+    <script>
+        function show() {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("onlineOrderingInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("dropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

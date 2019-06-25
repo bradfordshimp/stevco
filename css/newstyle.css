@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap");
+body,
+html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: "Roboto", Helvetica, sans-serif;
+  display: none;
+}
+
+body blockquote {
+  margin: 0;
+}
+
+body blockquote footer {
+  font-family: "Caveat", cursive;
+}
+
+body .banner {
+  /*justify-content: space-around;*/
+  background: #204c87;
+  /*align-items: center;*/
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 3em;
+  height: 100vh;
+}
+
+body .bluebg {
+  background: #204c87;
+  color: white;
+}
+
+body .whitebg {
+  background-color: white;
+}
+
+body .texture {
+  background-image: url("../images/back-pattern.png");
+}
+
+body .border {
+  border: 1px solid black;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em;
+  height: calc(100vh - 3em);
+}
+
+.flex-center h1,
+.flex-center p,
+.flex-center div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.flex-center p {
+  max-width: 600px;
+  margin-bottom: 36px;
+  display: inline-block;
+}
+
+header.nav {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 2em);
+  background: white;
+}
+
+header.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+header.nav a .logo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header.nav nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header.nav nav ul li a {
+  padding: 1em;
+}
+
+.wrapper,
+.wrapper-programs,
+.wrapper-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  /* Fading animation */
+}
+
+.wrapper .mySlides,
+.wrapper-programs .mySlides,
+.wrapper-about .mySlides {
+  display: none;
+}
+
+.wrapper .next,
+.wrapper-programs .next,
+.wrapper-about .next {
+  display: block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.wrapper .fade,
+.wrapper-programs .fade,
+.wrapper-about .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wrapper .quote,
+.wrapper-programs .quote,
+.wrapper-about .quote {
+  /*background: url('../images/confetti.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+  background-color: #2773b4;
+  -webkit-clip-path: polygon(0 0, 97% 6%, 92% 98%, 0% 100%);
+          clip-path: polygon(0 0, 97% 6%, 92% 98%, 0% 100%);
+  padding: 1.5rem;
+}
+
+.wrapper .quote2,
+.wrapper-programs .quote2,
+.wrapper-about .quote2 {
+  background-color: #4085c2;
+  -webkit-clip-path: polygon(1% 0, 93% 6%, 92% 88%, 0% 100%);
+          clip-path: polygon(1% 0, 93% 6%, 92% 88%, 0% 100%);
+  padding: 1.5rem;
+}
+
+.wrapper .quote3,
+.wrapper-programs .quote3,
+.wrapper-about .quote3 {
+  background-color: #95b6d3;
+  -webkit-clip-path: polygon(3% 0, 93% 3%, 90% 96%, 5% 100%);
+          clip-path: polygon(3% 0, 93% 3%, 90% 96%, 5% 100%);
+  padding: 2.5rem;
+}
+
+.wrapper .read-btn,
+.wrapper-programs .read-btn,
+.wrapper-about .read-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background: url("../images/iconmonstr-arrow-24.svg") no-repeat;
+  background-size: 12px;
+  background-position: 0 4px;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+.wrapper .primary,
+.wrapper-programs .primary,
+.wrapper-about .primary {
+  padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+  background-position: 3em;
+  border: 1px solid gray;
+  display: inline-block;
+  margin-top: 3em;
+  margin-left: -3em;
+}
+
+.wrapper .clipper,
+.wrapper-programs .clipper,
+.wrapper-about .clipper {
+  overflow: hidden;
+}
+
+.wrapper .hero,
+.wrapper-programs .hero,
+.wrapper-about .hero {
+  background: url("../images/NYBackground.png");
+  background-size: cover;
+}
+
+.wrapper .hero h1,
+.wrapper-programs .hero h1,
+.wrapper-about .hero h1 {
+  font-size: 2.4rem;
+  font-family: "Merriweather", "Roboto", Helvetica, sans-serif;
+}
+
+.wrapper .hero p,
+.wrapper-programs .hero p,
+.wrapper-about .hero p {
+  font-size: 125%;
+}
+
+.wrapper main,
+.wrapper aside {
+  padding: 3em;
+}
+
+.wrapper main .svg-btn,
+.wrapper aside .svg-btn {
+  border: 2px solid white;
+  padding: 15px 25px 15px 15px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-position: 0 4px;
+  padding-left: 1em;
+}
+
+.wrapper main svg,
+.wrapper aside svg {
+  fill: white;
+  height: 12px;
+}
+
+.wrapper-about {
+  padding: 3em;
+}
+
+.wrapper-about .svg-btn {
+  border: 2px solid white;
+  padding: 15px 25px 15px 15px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-position: 0 4px;
+  padding-left: 1em;
+}
+
+.wrapper-about svg {
+  fill: white;
+  height: 12px;
+}
+
+.wrapper-programs {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.wrapper-programs img {
+  width: calc(100vw - 6em);
+}
+
+.wrapper-programs .read-btn {
+  display: block;
+  margin: 1em;
+}
+
+.wrapper-programs header {
+  padding: 0;
+  margin: 1em 0 0 4em;
+}
+
+#form-top {
+  display: none;
+}
+
+#form-top:target {
+  display: block;
+  z-index: 20;
+}
+
+.flex-column-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-form {
+  margin: auto;
+  max-width: 500px;
+}
+
+/* Online Ordering */
+.dropbtn {
+  background-color: #2773b4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #204c87;
+}
+
+#onlineOrderingInput {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/search.svg");
+  background-position: 14px 12px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#onlineOrderingInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+.participant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.participant #avonPTA {
+  display: none;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.participant #avonPTA:target {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image slideshow */
+.image-slider {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+.image-slider img {
+  max-width: 750px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: none;
+}
+
+.next {
+  right: -18px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: calc(100% - 23px);
+  text-align: center;
+  display: none;
+  background-color: #204c87;
+  z-index: 20;
+}
+
+/*.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: none;
+}*/
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+footer {
+  margin: 0;
+  padding: 1em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Testimonials Page */
+.paddingtop4 {
+  padding: 4em 1em 1em 1em;
+}
+
+.flexwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flexwrapper .column {
+  -ms-flex-preferred-size: 350px;
+      flex-basis: 350px;
+}
+
+.flexwrapper blockquote {
+  font-size: 1.15em;
+  padding: 11px;
+  text-align: justify;
+}
+
+.flexwrapper blockquote footer {
+  font-size: 1.25em;
+}
+
+.wrapper-local {
+  padding: 4em 1em 1em 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .dot,
+  .text,
+  .image-slides,
+  .prev,
+  .next {
+    display: inline-block;
+  }
+  header.nav {
+    background: none;
+  }
+  header.whitebg {
+    background: white;
+  }
+  .wrapper {
+    -ms-grid-columns: 60% auto;
+    grid-template-columns: 70% auto;
+    -ms-grid-rows: 60% auto;
+    grid-template-rows: 60% auto;
+        grid-template-areas: "hero sidebar" "hero subscribe";
+    height: calc(100vh);
+    /*padding-top: 2em;*/
+  }
+  .wrapper .hero {
+    padding-top: 10em;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: hero;
+  }
+  .wrapper .hero p {
+    width: 65%;
+  }
+  .wrapper-programs {
+    -ms-grid-columns: 50% auto auto;
+        grid-template-columns: 50% auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "largebroch smallbroch smallbroch2" "largebroch smallbroch3 smallbroch4";
+  }
+  .wrapper-programs div {
+    padding: 0 1em 0 1em;
+  }
+  .wrapper-programs div img {
+    width: 100%;
+  }
+  .wrapper-about {
+    -ms-grid-columns: 65% auto;
+        grid-template-columns: 65% auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .wrapper-local {
+    -ms-grid-columns: 65% auto;
+        grid-template-columns: 65% auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  .largebroch {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: largebroch;
+  }
+  main,
+  aside {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .sidebar .read-btn {
+    display: inline-block;
+    margin-top: 1em;
+  }
+  #programs {
+    background-image: url("../images/back-pattern.png");
+    margin-top: 15px;
+  }
+  #programs header {
+    padding: 0;
+    margin: 1em 1em 1em 4em;
+    display: inline-block;
+  }
+  hr {
+    display: none;
+  }
+  .padded {
+    padding-right: 8em;
+  }
+}
+/*# sourceMappingURL=newstyle.css.map */
