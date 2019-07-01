@@ -9,7 +9,7 @@ html {
 body {
   height: 100%;
   font-family: "Roboto", Helvetica, sans-serif;
-  /*display: none;*/
+  display: none;
 
   blockquote {
     margin: 0;
@@ -272,6 +272,16 @@ header.nav {
 #form-top:target {
   display: block;
   z-index: 20;
+
+  
+
+  svg {
+    fill: white;
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    
+  }
 }
 
 .flex-column-center {
@@ -493,6 +503,11 @@ footer {
 
   header.nav {
     background: none;
+
+    a.logo {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
   header.whitebg {
     background: white;
@@ -542,7 +557,32 @@ footer {
   .wrapper-local {
     grid-template-columns: 65% auto ;
     grid-template-rows: auto auto;
+    background: url('../images/fingerlakes.jpg');
+    grid-template-areas: 
+      "Commitment Business"
+      "People Business";
+    min-height: calc(100vh - 5em);
+
+    section {
+      padding: 0em 4em;
+      background-color: rgba(221, 221, 221, 0.322);
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        ul {
+          list-style: circle;
+          padding: 0.25em 2em;
+        }
+      }
+    }
     
+  }
+
+  .business {
+    grid-area: Business;
   }
 
   .largebroch {

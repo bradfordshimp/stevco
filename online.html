@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf8">
     <title> Stevco Fundraising - Local NY Products </title>
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <!----><link rel="stylesheet" type="text/css" href="css/style2.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
@@ -12,11 +12,11 @@
 
 <body class="texture">
     <header class="nav">
-        <a href="#" class="logo"> Stevco Fundraising </a>
+        <a href="/index.html" class="logo"> Stevco Fundraising </a>
         <nav>
             <ul>
-                <li> <a href="/programs.html"> Programs </a></li>
-                <li> <a href="/about.html"> About Us </a></li>
+                <li> <a href="/index.html#programs"> Programs </a></li>
+                <li> <a href="/index.html#about"> About Us </a></li>
             </ul>
         </nav>
     </header>
@@ -75,6 +75,42 @@
         }
 
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    
+<script>
+
+document.addEventListener("DOMContentLoaded", function (event) {
+
+window.addEventListener("load", function (e) {
+
+    document.body.style.display = "block";
+
+    var tl = new TimelineMax();
+    tl.staggerFrom('main, aside', 2, {
+        opacity: 0,
+        scale: .5,
+        ease: Power2.easeOut
+    }, 0.2)
+
+    tl.staggerFrom('h1, h2', .5, {
+        opacity: 0,
+        y: -40,
+        ease: Power2.easeInOut
+    }, 0.2, "-=2")
+
+    tl.staggerFrom('.anim-panel', 1, {
+        opacity: 0,
+        y: -40,
+        ease: Power2.easeInOut
+    }, 0.2, "-=1.5")
+
+}, false);
+
+
+});
+</script>
+
 </body>
 
 </html>

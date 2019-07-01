@@ -15,8 +15,8 @@
         <a href="/index.html" class="logo"> Stevco Fundraising </a>
         <nav>
             <ul>
-                <li> <a href="#programs"> Programs </a></li>
-                <li> <a href="#about"> About Us </a></li>
+                <li> <a href="/index.html#programs"> Programs </a></li>
+                <li> <a href="/index.html#about"> About Us </a></li>
                 <li> <a href="/online.html"> Online Orders </a></li>
             </ul>
         </nav>
@@ -44,8 +44,8 @@
                 In recent years, we've been able to partner with local businesses, such as Leo's Bakery in East
                 Rochester
                 and Coffee Mania in Cortland,
-                for our fundraising programs. This means that not only can we help your local group raise money, we can
-                often do with by providing locally
+                for our fundraising programs. This means that not only can we help local groups raise money, we can
+                often do so by providing locally
                 made goods for them to sell.
             </p>
             <p>
@@ -55,7 +55,7 @@
             </p>
 
         </section>
-        <section>
+        <section class="business">
             <header>
                 <h2> Local Products </h2>
             </header>
@@ -106,7 +106,7 @@
                 grandchildren have helped them in various ways. Currently, their son Brad helps run the business.
             </p>
             <p>
-                Based in Clyde, Stevco is unique positioned to provide personal service to both the Rochester and
+                Based in Clyde, Stevco is uniquely positioned to provide personal service to both the Rochester and
                 Syracuse
                 regions, as well as the Finger
                 Lakes region. Because of our commitment to staying local, we provide a higher level of service than a
@@ -131,6 +131,41 @@
             </p>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            window.addEventListener("load", function (e) {
+
+                document.body.style.display = "block";
+
+                var tl = new TimelineMax();
+                tl.staggerFrom('main, aside', 2, {
+                    opacity: 0,
+                    scale: .5,
+                    ease: Power2.easeOut
+                }, 0.2)
+
+                tl.staggerFrom('h1, h2', .5, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=2")
+
+                tl.staggerFrom('.anim-panel', 1, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=1.5")
+
+            }, false);
+
+
+        });
+    </script>
+
 </body>
 
 </html>
